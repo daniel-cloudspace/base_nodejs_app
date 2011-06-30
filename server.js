@@ -57,7 +57,7 @@ socket.on('connection', function(client) {
     console.log(message);
   });
 
-  client.disconnect(function() {
+  client.on('disconnect', function() {
     // remove the reference to the user's object data, referenced 
     // by session id
     delete users[client.sessionId];
@@ -74,5 +74,5 @@ socket.on('connection', function(client) {
 // if you want an update sent every second, you can use socket 
 // outside of the socket.on block in a setInterval
 setInterval(function() {
-    socket.send(data);
+    socket.broadcast(data);
 }, 1000);
