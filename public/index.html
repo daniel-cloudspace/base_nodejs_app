@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript">
-      var a, b;
+      var a, b, my_id;
       window.addEventListener('load', function() {
         var socket = new io.connect();
     
@@ -13,6 +13,7 @@
           /* something related to disconnect! */ 
         });
         socket.on('init_data', function(init_data) {
+          my_id = init_data.my_id;
           a = init_data.a; // sets global ‘a’ variable from data sent by Socket.io
           b = init_data.b; // sets global ‘b’ variable
         });
