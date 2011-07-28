@@ -1,0 +1,49 @@
+{
+   "name": "base_nodejs_app",
+   "version": "0.0.1",
+   "description": "Base NodeJS App for quickstart development amongst people who don't know NodeJS yet. Installs Express for a public directory and Socket.IO for juicy socket communications",
+   "keywords": [
+       "socket.io", "basic", "express", "games"
+   ],
+   "maintainers": [
+       {
+           "name": "Daniel Lewis",
+           "email": "daniel@cloudspace.com",
+           "web": "http://labs.cloudspace.com/" 
+       } 
+   ],
+   "contributors": [
+       {
+           "name": "Daniel Lewis",
+           "email": "daniel@cloudspace.com",
+           "web": "http://www.cloudspace.com/" 
+       } 
+   ],
+   "bugs": {
+       "email": "daniel@cloudspace.com",
+       "web": "http://www.cloudspace.com" 
+   },
+   "licenses": [
+       {
+           "type": "GPLv2",
+           "url": ""
+       } 
+   ],
+   "repositories": [
+       {
+           "type": "git",
+           "url": "git@github.com:Stanzr/stanzr.git" 
+       } 
+   ],
+   "dependencies": {
+       "socket.io": "",
+       "express": ""
+   },
+   "os": ["linux"],
+   "cpu": ["x86", "x86_64"],
+   "engines": ["v8", "node"],
+   "scripts": {
+   },
+   "directories": {
+   } 
+}
